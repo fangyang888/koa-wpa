@@ -1,0 +1,15 @@
+{
+    "short_name": "测试Pwa",
+    "name": "第一个pwa程序",
+    "icon": [
+        {
+            "src": "img/logo.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }
+    ],
+    "display": "standalone",
+    "start_url": "index.html",
+    "background_color": "#2196f3",
+    "theme_color": "red"
+}

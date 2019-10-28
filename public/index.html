@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Service Worker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="manifest" href="./manifest.json">
+   <script src="./js/vue.js"></script>
+   <script src="./js/axios.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        {{message}}
+       <div v-for="(item,i) in list" :key="i">
+          名字 -- {{item.name}}
+       </div>
+       <button @click="postMessage()">发送消息</button>
+       <button @click="pushMessage()">推送消息</button>
+    </div>
+    <div></div>
+   <script src="./index.js"> </script>
+</body>
+
+</html>
